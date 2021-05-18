@@ -28,3 +28,30 @@ ggplot(starwars, aes(x= height, y = mass)) + geom_point() +
 
 ```
 
+## Anscombe's quartet
+We summarize the quartet information by each set of data 
+```{r message=FALSE}
+
+library(Tmisc)
+library(tidyverse)
+head(quartet )
+quartet %>%
+  group_by(set) %>%
+  summarise(
+    mean_x = mean(x), 
+    mean_y = mean(y),
+    sd_x = sd(x),
+    sd_y = sd(y),
+    r = cor(x, y)
+  )
+```
+
+We visualize all four set 
+```{r quartet-plot,echo = FALSE, out.width = "80%", fig.asp = 0.5}
+
+ggplot(quartet, aes(x = x, y = y)) +
+  geom_point() +
+  facet_wrap(~ set, ncol = 4)
+```
+
+
