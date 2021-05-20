@@ -13,12 +13,11 @@
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/20/a01-ggplot2/</guid>
-      <description>Categorical and Numerical visualization Part 1First bullet point under part 1
+      <description>Categorical and Numerical visualization Part 1First bullet point under part 1
 Second bullet point under part 1
 Categorical and Numerical visualization Part 2First bullet point under part 2
 Second bullet point under part 2
-Categorical data visualizationlibrary(openintro)loans &amp;lt;- loans_full_schema %&amp;gt;%select(loan_amount, interest_rate, term, grade,state, annual_income, homeownership, debt_to_income)glimpse(loans)
-</description>
+Numerical data visualizationCategorical data visualizationThe main interesting thing about the GGPPLOT was how easy it is to display the complex data on the webpages.</description>
     </item>
     
     <item>

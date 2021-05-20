@@ -23,11 +23,50 @@ tags: []
 
 * Second bullet point under part 2
 
+
+
+## Numerical  data visualization
+
+```{r message=FALSE, echo= FALSE}
+
+library(tidyverse)
+library(openintro)
+
+
+loans <- loans_full_schema %>%
+  select(loan_amount, interest_rate, term, grade, 
+         state, annual_income, homeownership, debt_to_income)
+
+
+
+
+ggplot(loans, aes(x = loan_amount, fill = homeownership)) + 
+  geom_histogram(binwidth = 5000) +
+  labs(
+    x = "Loan amount ($)",
+    y = "Frequency",
+    title = "Amounts of Lending Club loans"
+  ) +
+  facet_wrap(~ homeownership, nrow = 3)
+
+ggplot(loans, aes(x = loan_amount)) +
+  geom_histogram(binwidth = 5000) +
+  labs(
+    x = "Loan amount ($)",
+    y = "Frequency",
+    title = "Amounts of Lending Club loans"
+  )
+
+```
+
+
+
+
 ## Categorical data visualization
 
-```{r}
+```{r message=FALSE, echo= FALSE}
 library(openintro)
-library(tidyverse)
+library(ggplot2) 
 
 ggplot(loans, aes(y = homeownership,
                   fill = grade)) +
@@ -40,8 +79,18 @@ ggplot(loans, aes(y = homeownership,
     subtitle = "and homeownership of lendee"
   )
 
+
+ggplot(loans, aes(x = loan_amount, fill = homeownership)) + 
+  geom_histogram(binwidth = 5000) +
+  labs(
+    x = "Loan amount ($)",
+    y = "Frequency",
+    title = "Amounts of Lending Club loans"
+  ) +
+  facet_wrap(~ homeownership, nrow = 3)
 ```
 
 
+The main interesting thing about the GGPPLOT was how easy it is to display the complex data on the webpages. 
 
-
+Contrary to that, I find issues to render the graphs to the website.
