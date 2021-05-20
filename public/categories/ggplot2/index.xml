@@ -6,7 +6,21 @@
     <description>Recent content in ggplot2 on Naveen -  Fundamentals of Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A01: GGPLOT2</title>
+      <link>/2021/05/20/a01-ggplot2/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/20/a01-ggplot2/</guid>
+      <description>Categorical and Numerical visualization Part 1First bullet point under part 1
+Second bullet point under part 1
+Categorical and Numerical visualization Part 2First bullet point under part 2
+Second bullet point under part 2
+Categorical data visualizationlibrary(openintro)loans &amp;lt;- loans_full_schema %&amp;gt;%select(loan_amount, interest_rate, term, grade,state, annual_income, homeownership, debt_to_income)glimpse(loans)
+</description>
+    </item>
+    
     <item>
       <title>Data and Visualization</title>
       <link>/2021/05/18/data-and-visualization/</link>

@@ -1,0 +1,47 @@
+---
+title: 'A01: GGPLOT2'
+author: Naveen
+date: '2021-05-20'
+slug: a01-ggplot2
+categories:
+  - ggplot2
+tags: []
+---
+
+## Categorical  and Numerical visualization Part 1 
+
+
+* First bullet point under part 1 
+
+* Second bullet point under part 1
+
+
+
+## Categorical  and Numerical visualization Part 2 
+
+* First bullet point under part 2 
+
+* Second bullet point under part 2
+
+## Categorical data visualization
+
+```{r}
+library(openintro)
+library(tidyverse)
+
+ggplot(loans, aes(y = homeownership,
+                  fill = grade)) +
+  geom_bar(position = "fill") +
+  labs(
+    x = "Proportion",
+    y = "Homeownership",
+    fill = "Grade",
+    title = "Grades of Lending Club loans",
+    subtitle = "and homeownership of lendee"
+  )
+
+```
+
+
+
+
