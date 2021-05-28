@@ -1,0 +1,169 @@
+---
+title: 'A02: TIDYVERSE'
+author: Naveen
+date: '2021-05-28'
+slug: a02-tidyverse
+categories:
+  - tidyverse
+tags: []
+---
+
+
+
+## Import BCT India Data
+
+```{r warning = FALSE}
+library(tidyverse)
+btcdata <- read_csv("btcinrdata.csv")
+
+head(btcdata)
+names(btcdata)
+```
+
+## One table verb - Count
+
+```{r}
+
+btcdata %>%
+  count(Date)
+
+
+```
+
+
+## One table verb - Distinct
+
+```{r}
+
+btcdata %>%
+  distinct(Date)
+
+
+```
+
+
+
+## Two table verb - Bind Rows
+
+```{r}
+
+one <- btcdata[1:4, ]
+two <- btcdata[9:12, ]
+
+bind_rows(one, two)
+
+
+
+
+```
+
+
+## Two table verb - Bind Cols
+
+```{r}
+
+one <- btcdata[1:4, ]
+two <- btcdata[9:12, ]
+
+bind_cols(one, two)
+
+
+```
+
+
+
+## Grouping  - Group By 
+
+```{r}
+
+
+btcdata %>%
+  group_by(Date)
+
+```
+
+
+## Grouping  - Group By Colls
+
+```{r}
+
+gdf <- btcdata %>% group_by(Date)
+gdf %>% select(group_cols())
+
+
+```
+
+
+## Vector functions -  Between 
+
+```{r}
+
+
+filter(btcdata, between(High, 2000, 1000000000))
+```
+
+
+## Vector functions -  Descending 
+
+```{r}
+btcdata %>%
+ arrange(desc(Date))
+
+```
+
+
+## Pivoting  -- Spread
+
+```{r}
+
+library(dplyr)
+stocks <- data.frame(
+  time = as.Date('2009-01-01') + 0:9,
+  X = rnorm(10, 0, 1),
+  Y = rnorm(10, 0, 2),
+  Z = rnorm(10, 0, 4)
+)
+stocksm <- stocks %>% gather(stock, price, -time)
+stocksm %>% spread(stock, price)
+```
+
+## Pivoting -- Gather
+
+```{r}
+
+
+library(dplyr)
+
+stocks <- tibble(
+  time = as.Date('2009-01-01') + 0:9,
+  X = rnorm(10, 0, 1),
+  Y = rnorm(10, 0, 2),
+  Z = rnorm(10, 0, 4)
+)
+
+gather(stocks, "stock", "price", -time)
+```
+
+
+## Missing Values - Fill 
+
+```{r}
+
+
+btcdata %>% fill(Date)
+
+```
+
+## Missing Values - Expand 
+
+```{r}
+btcdata %>% expand(High)
+```
+
+
+## Narrative 
+
+* I find it very interesting that how easy it to do analyze the data using R.
+
+* On the other hand, R is not so simple as learning SQL.
+
