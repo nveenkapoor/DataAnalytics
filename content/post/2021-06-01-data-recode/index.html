@@ -1,0 +1,35 @@
+---
+title: Data Recode
+author: Naveen
+date: '2021-06-01'
+slug: data-recode
+categories:
+  - recode
+tags: []
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="import-relgion-income-file" class="section level2">
+<h2>Import Relgion Income File</h2>
+<pre class="r"><code>library(readxl)
+rel_inc &lt;- read_excel(&quot;relig-income.xlsx&quot;)
+rel_inc</code></pre>
+<pre><code>## # A tibble: 12 x 6
+##    `Religious tradition`    `Less than $30,00~ `$30,000-$49,99~ `$50,000-$99,99~
+##    &lt;chr&gt;                                 &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
+##  1 &quot;Buddhist&quot;                             0.36             0.18             0.32
+##  2 &quot;Catholic&quot;                             0.36             0.19             0.26
+##  3 &quot;Evangelical Protestant&quot;               0.35             0.22             0.28
+##  4 &quot;Hindu&quot;                                0.17             0.13             0.34
+##  5 &quot;Historically Black Pro~               0.53             0.22             0.17
+##  6 &quot;Jehovah&#39;s Witness&quot;                    0.48             0.25             0.22
+##  7 &quot;Jewish&quot;                               0.16             0.15             0.24
+##  8 &quot;Mainline Protestant&quot;                  0.29             0.2              0.28
+##  9 &quot;Mormon&quot;                               0.27             0.2              0.33
+## 10 &quot;Muslim&quot;                               0.34             0.17             0.29
+## 11 &quot;Orthodox Christian&quot;                   0.18             0.17             0.36
+## 12 &quot;Unaffiliated (religiou~               0.33             0.2              0.26
+## # ... with 2 more variables: $100,000 or more &lt;dbl&gt;, Sample Size &lt;dbl&gt;</code></pre>
+</div>
