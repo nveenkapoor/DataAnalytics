@@ -50,6 +50,17 @@ rel_inc_long <- rel_inc_long %>%
   mutate(religion = fct_rev(religion))
 
 
+ggplot(rel_inc_long, aes(y = religion, x = frequency)) + 
+  geom_col()
+
+
+```
+
+## Visualise Income with color
+
+```{r}
+
+
 ggplot(rel_inc_long, aes(y = religion, x = frequency, fill = income)) + 
   geom_col()
 
@@ -61,6 +72,7 @@ ggplot(rel_inc_long, aes(y = religion, x = frequency, fill = income)) +
   geom_col(position = "fill") +
   scale_fill_viridis_d()
 ```
+
 
 
 ## Change Theme of GGPLOT
