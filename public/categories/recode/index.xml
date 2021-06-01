@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recode on Naveen -  Fundamentals of Analytics</title>
+    <link>/categories/recode/</link>
+    <description>Recent content in recode on Naveen -  Fundamentals of Analytics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/recode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Recode</title>
+      <link>/2021/06/01/data-recode/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/01/data-recode/</guid>
+      <description>Import Relgion Income Filelibrary(readxl)rel_inc &amp;lt;- read_excel(&amp;quot;relig-income.xlsx&amp;quot;)rel_inc## # A tibble: 12 x 6## `Religious tradition` `Less than $30,00~ `$30,000-$49,99~ `$50,000-$99,99~## &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;## 1 &amp;quot;Buddhist&amp;quot; 0.36 0.18 0.32## 2 &amp;quot;Catholic&amp;quot; 0.36 0.19 0.26## 3 &amp;quot;Evangelical Protestant&amp;quot; 0.35 0.22 0.28## 4 &amp;quot;Hindu&amp;quot; 0.17 0.13 0.34## 5 &amp;quot;Historically Black Pro~ 0.53 0.22 0.17## 6 &amp;quot;Jehovah&amp;#39;s Witness&amp;quot; 0.48 0.25 0.</description>
+    </item>
+    
+  </channel>
+</rss>

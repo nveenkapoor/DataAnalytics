@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Naveen -  Fundamentals of Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>import</title>
+      <link>/categories/import/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recode</title>
+      <link>/categories/recode/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/recode/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>tidyverse</title>
       <link>/categories/tidyverse/</link>
