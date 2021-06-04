@@ -1,0 +1,117 @@
+---
+title: A03 Assignment
+author: Naveen
+date: '2021-06-03'
+slug: a03-assignment
+categories:
+  - data
+tags: []
+---
+
+
+## Import Data - lego_sales
+
+```{r}
+
+library(tidyverse)
+lego_sales <- read_csv("lego_sales.csv")
+
+head(lego_sales)
+names(lego_sales)
+
+```
+
+
+
+## Question 1
+
+```{r}
+
+ascen <- lego_sales %>% 
+  group_by(first_name) %>% 
+
+  summarise(total_quantity = sum(quantity))
+  ## group_by(first_name)
+
+arrange(ascen, desc(total_quantity)) %>% top_n(3)
+
+```
+
+## Question 2
+
+```{r}
+
+ascen <- lego_sales %>% 
+  group_by(theme) %>% 
+
+  summarise(total_quantity = sum(quantity))
+
+arrange(ascen, desc(total_quantity)) %>% top_n(3)
+
+```
+
+
+## Question 3
+
+```{r}
+
+ascen <- lego_sales %>% 
+  group_by(theme,subtheme) %>% 
+  filter(!is.na(subtheme)) %>% 
+
+  summarise(total_quantity = sum(quantity))
+
+td <- arrange(ascen, desc(total_quantity)) 
+
+ head(td,3)
+
+```
+
+
+## Question 4
+
+```{r}
+
+age_group <- lego_sales %>% 
+  mutate(group = case_when(
+    between(age,  0, 18) ~ "18 and under",
+    between(age, 19, 25) ~ "19 - 25",
+    between(age, 26, 35) ~ "26 - 35",
+  between(age, 35, 51) ~ "35 - 51",
+     between(age, 51, 100) ~ "51 and over",
+    TRUE ~ NA_character_
+  ))
+
+
+```
+
+
+## Question 8
+
+```{r}
+
+
+ascen <- lego_sales  %>%   head(10)
+
+
+ggplot(ascen, aes(y = theme, x = subtheme)) + 
+  geom_col()
+
+```
+
+## Question 9
+
+```{r}
+
+
+ascen <- lego_sales  %>%   head(5)
+
+
+ggplot(ascen, aes(y = theme, x = subtheme, fill = theme)) + 
+  geom_col()
+```
+
+
+
+
+
