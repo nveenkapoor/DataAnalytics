@@ -1,0 +1,13 @@
+name: DataAnalytics
+title: DataAnalytics
+username:
+account: naveenkapoor
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4245784
+bundleId: 4694304
+url: https://naveenkapoor.shinyapps.io/DataAnalytics/
+when: 1623195549.4712
+lastSyncTime: 1623195549.4712
+asMultiple: FALSE
+asStatic: FALSE
