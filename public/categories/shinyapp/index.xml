@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shinyapp on Naveen -  Fundamentals of Analytics</title>
+    <link>/categories/shinyapp/</link>
+    <description>Recent content in shinyapp on Naveen -  Fundamentals of Analytics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/shinyapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assignment : 03 (Shiny App)</title>
+      <link>/2021/06/12/assignment-04-shiny-app/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/12/assignment-04-shiny-app/</guid>
+      <description>Assignment Number 4 - US ConsensusThis is interactive visualization
+src= “https://naveenkapoor.shinyapps.io/DataAnalytics/” height = “1000” width = “100%” frameborder =“no”</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/2021/06/12/assignment-04-shiny-app/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/shinyapp/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/2021/06/03/a03-assignment/</loc>
     <lastmod>2021-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/categories/data/</loc>
-    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2021-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
     <lastmod>2021-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/2021/06/01/data-recode/</loc>

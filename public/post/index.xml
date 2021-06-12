@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Naveen -  Fundamentals of Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assignment : 03 (Shiny App)</title>
+      <link>/2021/06/12/assignment-04-shiny-app/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/12/assignment-04-shiny-app/</guid>
+      <description>Assignment Number 4 - US ConsensusThis is interactive visualization
+src= “https://naveenkapoor.shinyapps.io/DataAnalytics/” height = “1000” width = “100%” frameborder =“no”</description>
+    </item>
+    
     <item>
       <title>A03 Assignment</title>
       <link>/2021/06/03/a03-assignment/</link>
