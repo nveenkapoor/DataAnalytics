@@ -6,7 +6,16 @@
     <description>Recent content on Naveen -  Fundamentals of Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fitting and interpreting models</title>
+      <link>/2021/06/15/fitting-and-interpreting-models/</link>
+      <pubDate>Tue, 15 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/15/fitting-and-interpreting-models/</guid>
+      <description>Models with numerical explanatory variablesData Paris Paintingpp &amp;lt;- read_csv(&amp;quot;paris-paintings.csv&amp;quot;, na = c(&amp;quot;n/a&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;NA&amp;quot;))## ## -- Column specification --------------------------------------------------------## cols(## .default = col_double(),## name = col_character(),## sale = col_character(),## lot = col_character(),## dealer = col_character(),## origin_author = col_character(),## origin_cat = col_character(),## school_pntg = col_character(),## price = col_number(),## subject = col_character(),## authorstandard = col_character(),## authorstyle = col_character(),## author = col_character(),## winningbidder = col_character(),## winningbiddertype = col_character(),## endbuyer = col_character(),## type_intermed = col_character(),## Shape = col_character(),## material = col_character(),## mat = col_character(),## materialCat = col_character()## )## i Use `spec()` for the full column specifications.</description>
+    </item>
+    
     <item>
       <title>Assignment : 04 (Shiny App)</title>
       <link>/2021/06/12/assignment-04-shiny-app/</link>
@@ -14,7 +23,17 @@
       
       <guid>/2021/06/12/assignment-04-shiny-app/</guid>
       <description>US ConsensusThis is interactive visualization
-src= “https://naveenkapoor.shinyapps.io/DataAnalytics/” height = “1000” width = “100%” frameborder =“no”</description>
+</description>
+    </item>
+    
+    <item>
+      <title>Testing Shiny App</title>
+      <link>/2021/06/12/testing-shiny-app/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/12/testing-shiny-app/</guid>
+      <description>US Consensus This is interactive visualization
+ src=&#34;https://naveenkapoor.shinyapps.io/DataAnalytics&#34; </description>
     </item>
     
     <item>
