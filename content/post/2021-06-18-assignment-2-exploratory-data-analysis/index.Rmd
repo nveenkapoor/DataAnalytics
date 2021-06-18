@@ -1,0 +1,85 @@
+---
+title: 'Assignment 2: Exploratory Data Analysis'
+author: Naveen
+date: '2021-06-18'
+slug: assignment-2-exploratory-data-analysis
+categories:
+  - ggplot2
+tags: []
+---
+
+
+
+```{r packages, echo = FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(tidymodels)
+library(ggtext)
+library(knitr)
+library(kableExtra)
+set.seed(1234)
+options(dplyr.print_min = 10, dplyr.print_max = 6)
+```
+
+
+# Assignment 2: Exploratory Data Analysis
+
+Naveen Kapoor
+
+
+# The World Bank Data Economy And Growth
+
+This data set has been taken from the World Bank and it talks about the growth of economy from last 50 years. I have chosen this dataset because I have seen due to pandemic lot of countries have been affected by the stalled growth at each sector. I have taken this dataset from: https://github.com/ZeningQu/World-Bank-Data-by-Indicators/tree/master/economy-and-growth
+
+```{r warning = FALSE, message=FALSE, echo = FALSE}
+library(tidyverse)
+wbdata <- read_csv("economy-and-growth.csv")
+
+
+```
+
+
+# Initial Analysis Questions
+
+1. Analysis of exports of goods and services.
+2. How foreign direct investment impacted?
+3. How transport services impacted over the years?
+4. Analysis of export of ICT Services.
+
+
+# Discoveries & Insights
+
+Export Of Good and Services from 1960 to 2018
+
+```{r height-width-plot, echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(data = wbdata, aes(x = Year, y = Exportsofgoodsandservices)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#8E2C90") + 
+  labs(
+    title = "Year vs. Export of Goods (Dollars)",
+    subtitle = "Export Of Goods, 1960 - 2018",
+    x = "Width (Years)",
+    y = "Height (Dollar)"
+  )
+
+```
+
+## Foriegn Direct Investment over the year
+
+```{r vis-res-3, echo = FALSE, out.width="70%", warning=FALSE, message=FALSE}
+ ggplot(data = wbdata, aes(x = Year, y = Exportsofgoodsandservices)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#8E2C90") + 
+  labs(
+    title = "Foriegn Direct Investment over the Year",
+    subtitle = "Foriegn Direct Investment, 1960 - 2018",
+    x = "Width (Years)",
+    y = "Height (Dollar)"
+  ) + geom_smooth(method = "lm", color = "#8E2C90", se = FALSE) +
+  geom_point(mapping = aes(y = Foreigndirectinvestment), color = "#E48957") +
+  labs(subtitle = "") + 
+  geom_segment(mapping = aes(xend = Year, yend = Foreigndirectinvestment
+), color = "#E48957", alpha = 0.4) +
+  labs(subtitle = "")
+
+```
+
