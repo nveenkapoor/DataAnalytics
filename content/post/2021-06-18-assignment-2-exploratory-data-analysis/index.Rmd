@@ -83,3 +83,39 @@ ggplot(data = wbdata, aes(x = Year, y = Exportsofgoodsandservices)) +
 
 ```
 
+## Transport Services
+
+```{r vis-res-2, echo=FALSE, out.width="70%"}
+ggplot(data = wbdata, aes(x = Year, y = transportservices)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#8E2C90") + 
+  labs(
+    title = "Transport Services",
+    subtitle = "Transport Servicess, 1960 - 2018",
+    x = "Width (Years)",
+    y = "Height (Number)"
+  ) +
+  geom_smooth(method = "lm", color = "#8E2C90", se = FALSE) +
+  geom_point(mapping = aes(y = transportservices), color = "#E48957") +
+  labs(subtitle = "")
+
+```
+
+
+## Analysis of Export Of IT Services
+
+```{r height-width-plot, echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(data = wbdata, aes(x = Year, y = ICTservices)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#8E2C90") + 
+  labs(
+    title = "Year vs. Export of ICT Services",
+    subtitle = "Export Of IT Servoces, 1960 - 2018",
+    x = "Width (Years)",
+    y = "Height (Number)"
+  )
+
+```
+## Analysis of Export Of IT Services
+
+It has been analyzed from the data that export data, ICT services and foriegn investment have increased over the period of time. Which implies that economy and growth is increasing year by year

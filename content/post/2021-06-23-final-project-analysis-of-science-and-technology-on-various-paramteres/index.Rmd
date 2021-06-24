@@ -1,0 +1,121 @@
+---
+title: Final Project - Analysis of Science and Technology on Various Paramteres
+author: Naveen
+date: '2021-06-23'
+slug: final-project-analysis-of-science-and-technology-on-various-paramteres
+categories:
+  - data
+tags: []
+---
+
+```{r packages, echo = FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(tidymodels)
+library(ggtext)
+library(knitr)
+library(kableExtra)
+
+```
+
+## Trend in Science And Technology  
+
+```{r echo = FALSE, message=FALSE, warning=FALSE}
+
+library(tidyverse)
+sc_tech <- read_csv("science-and-technology.csv")
+
+
+
+```
+
+## Introduction
+
+Science and technology encompasses the systematic study of the structure and behavior of the physical and natural world through observation and experiment, and scientific knowledge for practical purposes. In this project, I have taken the data of Science and Technology and analyze growth of patents register by residents and non resident, how much was the R&D Expenditure as compared to the GDP of a country and the export of high tech.
+
+
+
+```{r out.width="98%", echo=FALSE}
+knitr::include_graphics("science.jpg")
+```
+
+Underneath items have been analysed in this article 
+
+1. Analysis of patents registered by residents and non residents over the year.
+2. Research and Development expenditure over the year
+3. Understanding the export of high tech over the year
+
+# Patents resgistred by residents from 1960 to 2018
+
+```{r  echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(data = sc_tech, aes(x = Year, y = Patentresidents)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#8E2C90") + 
+  labs(
+    title = "Year vs. Patents (Residents)",
+    subtitle = "Registration Of Patents by residents, 1960 - 2018",
+    x = "Years",
+    y = "Number of Patents"
+  )
+
+```
+
+# Patents resgistred by non residents from 1960 to 2018
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(data = sc_tech, aes(x = Year, y = Patentnonresidents)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#8F2C90") + 
+  labs(
+    title = "Year vs. Patents (Non-Residents)",
+    subtitle = "Registration Of Patents by Non Residents, 1960 - 2018",
+    x = "Years",
+    y = "Number of Patents"
+  )
+
+```
+
+Looking at the data for patents registered by the residents and non residents of a country, it is clear that non resident citizen of any country are registering more patents as compared to residents. 
+
+## Research and Development Expenditure over the year
+
+```{r echo = FALSE, out.width="70%", warning=FALSE, message=FALSE}
+ ggplot(data = sc_tech, aes(x = Year, y = Rdexpenditure)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#8E2C90") + 
+  labs(
+    title = "Research and Development Expenditure over the Year",
+    subtitle = "Test",
+    x = "Years",
+    y = "R D Expendeture"
+  ) + geom_smooth(method = "lm", color = "#8E2C90", se = FALSE) +
+  geom_point(mapping = aes(y = Rdexpenditure), color = "#E48957") +
+  labs(subtitle = "") + 
+  geom_segment(mapping = aes(xend = Year, yend = Rdexpenditure
+), color = "#E48957", alpha = 0.4) +
+  labs(subtitle = "")
+
+```
+
+
+It is clear from the results that R&D expenditure has been exponentially increased after 1998. Which clears states that how science and technology has grown over the year.
+
+
+## Export of High Tech over the year
+
+```{r  echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(data = sc_tech, aes(x = Year, y = Hightechexports)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#8E2C90") + 
+  labs(
+    title = "Export of High Tech",
+    subtitle = "Export Growth of High Tech",
+    x = "Year",
+    y = "High Tech Export"
+  )
+```
+
+## Summary
+
+To summarize the trend of science and technology over the year, it is clearly seen that, expenditure in R&D and export of high tech services are growing over the last couple of decades. It is also observed from that data that non resident of any country are also progressing their career in science and technology sector.
+
